@@ -1,0 +1,4 @@
+https://www.mcafee.com/blogs/other-blogs/mcafee-labs/revil-ransomware-uses-dll-sideloading/
+
+DLL SIDE LOADING
+The malware uses DLL side loading to execute the ransomware code. This technique allows the attacker to execute malicious DLLs that spoof legitimate ones. This technique has been used in many APTs to avoid detection. In this attack, MsMpEng.exe loads the functions of MpSvc.dll during the time of execution. However, the attacker has replaced the clean MpSvc.dll with the ransomware binary of the same name. The malicious DLL file has an export function named ServiceCrtMain, which is further called and executed by the Microsoft Defender file. This is a clever technique used by the attacker to execute malicious file using the Microsoft digitally signed binary.
